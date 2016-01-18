@@ -30,3 +30,12 @@ $(document).ready(function() {
   });
 });
 
+$('.twitch-connect').click(function() {
+  Twitch.login({
+    scope: ['user_read', 'channel_read']
+    if (status.authenticated) {
+  // Already logged in, hide button
+  $('.twitch-connect').hide()
+   }
+  });
+})

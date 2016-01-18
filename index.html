@@ -7,7 +7,18 @@
 </head>
 <body style="background-color: black">
 
+<script src="//code.jquery.com/jquery.min.js"></script>
+<script src="https://ttv-api.s3.amazonaws.com/twitch.min.js"></script>
+<script src="/twitch-js-sdk/twitch.min.js"></script>
+<script src="/twitch-js-sdk/twitch.js"></script>
+
 <header>
+  <div class="twitchlogin">
+   <p style="text-align:right;">
+    <img src="http://ttv-api.s3.amazonaws.com/assets/connect_dark.png" class="twitch-connect" href="#" />
+   </p>
+  </div>
+
   <div class="logohead" style="background-image:url(/assets/banner2.png); height:455px;">
    <p style="text-align:center;">
     <img src="/assets/circleviclogo.png">
@@ -66,7 +77,7 @@
                  <div class="twitchstream">
                   <p style="text-align:center;">
                    <iframe
-                     src="http://player.twitch.tv/?channel={gurlsrbadatvidyagaems}"
+                     src="http://player.twitch.tv/?channel=gurlsrbadatvidyagaems"
                      height="540"
                      width="960"
                      frameborder="0"
@@ -77,24 +88,23 @@
                    <iframe frameborder="0"
                      scrolling="no"
                      id="chat_embed"
-                     src="http://www.twitch.tv/{gurlsrbadatvidyagaems}/chat"
+                     src="http://www.twitch.tv/gurlsrbadatvidyagaems/chat"
                      height="540"
                      width="300">
                    </iframe>
                   </p>
                  </div>
 
-<script src="//code.jquery.com/jquery.min.js"></script>
-<script src="https://ttv-api.s3.amazonaws.com/twitch.min.js"></script>
-
-<script>
-  Twitch.init({clientId: '1lds253cl6eyaxwho81es7k1k1vunel'}, function(error, status) {
-    // the sdk is now loaded
-  });
-</script>
-
  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
  <script src="app.js"></script>
+
+<script>
+Twitch.init({
+  clientId: '1lds253cl6eyaxwho81es7k1k1vunel'
+}, function(err, status) {
+  console.log('the library is now loaded')
+});
+</script>
 
 </body>
 </html>
