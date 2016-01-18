@@ -1,0 +1,14 @@
+{
+  "name": "site",
+  "version": "1.0.0",
+  "description": "Stream Website",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Vic Maracle",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.13.3"
+  }
+}

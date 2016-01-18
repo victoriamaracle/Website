@@ -1,0 +1,107 @@
+<!doctype html>
+<html>
+<head>
+<title>Viclovesd - Home</title>
+<link rel="shortcut icon" href="title.ico">
+<link rel="stylesheet" href="style.css">
+</head>
+<body style="background-color: black">
+
+<header>
+  <div class="logohead" style="background-image:url(banner2.png); height:455px;">
+   <p style="text-align:center;">
+    <img src="circleviclogo.png">
+   </p>
+  </div>
+
+     <div class="socialcontainer" style="background-color:black; height:80px;">
+      <table align="center" cellpadding="15">
+       <tr>
+        <td>
+         <div class="twitchbutton">
+          <a href="http://www.twitch.tv/gurlsrbadatvidyagaems">
+           <img src="twitch.png" style="width:250px;height:50px;">
+          </a>
+         </div>
+        </td>
+
+        <td>
+         <div class="twitterbutton">
+          <a href="https://twitter.com/viclovesd">
+           <img src="twitter.png" style="float:center;display:inline;width:250px;height:50px;">
+          </a>
+         </div>
+        </td>
+
+        <td>
+         <div class="facebookbutton">
+          <a href="https://www.facebook.com/biggestteets">
+           <img src="facebook.png" style="float:center;display:inline;width:250px;height:50px;">
+          </a>
+         </div>
+        </td>
+
+        <td>
+         <div class="instagrambutton">
+          <a href="http://instagram.com/viclovesd">
+           <img src="instagram.png" style="float:center;display:inline;width:250px;height:50px;">
+          </a>
+         </div>
+        </td>
+
+        <td>
+         <div class="youtubebutton">
+          <a href="youtube.com/c/viclovesd">
+           <img src="youtube.png" style="float:center;display:inline;width:250px;height:50px;">
+          </a>
+         </div>
+        </td>
+       </table>
+      </tr>
+     </div>
+</header>
+
+  <div class="container" style="background-color:black;">
+
+                 <div class="twitchstream">
+                  <p style="text-align:center;">
+                   <iframe
+                     src="http://player.twitch.tv/?channel={gurlsrbadatvidyagaems}"
+                     height="540"
+                     width="960"
+                     frameborder="0"
+                     scrolling="no"
+                     allowfullscreen>
+                   </iframe>
+
+                   <iframe frameborder="0"
+                     scrolling="no"
+                     id="chat_embed"
+                     src="http://www.twitch.tv/{gurlsrbadatvidyagaems}/chat"
+                     height="540"
+                     width="300">
+                   </iframe>
+                  </p>
+                 </div>
+
+<script src="//code.jquery.com/jquery.min.js"></script>
+<script src="https://ttv-api.s3.amazonaws.com/twitch.min.js"></script>
+
+<script>
+  Twitch.init({clientId: '1lds253cl6eyaxwho81es7k1k1vunel'}, function(error, status) {
+    // the sdk is now loaded
+  });
+</script>
+
+ <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+ <script>
+ $(document).ready(function() {
+  $('twitchbutton').click(function() {
+   $('social container').animate({left: '20px'});
+  });
+ });
+ </script>
+ <script src="app.js"></script>
+
+</body>
+</html>
