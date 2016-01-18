@@ -5,98 +5,77 @@
 <link rel="shortcut icon" href="/assets/title.ico">
 <link rel="stylesheet" href="style.css">
 </head>
-<body style="background-color: black">
+<body>
+
+<header>
+  <div class="twitchlogin">
+   <p>
+    <img src="http://ttv-api.s3.amazonaws.com/assets/connect_dark.png" class="twitch-connect" href="#" />
+   </p>
+  </div>
+
+  <div class="logohead">
+   <p>
+    <img class="logo" src="/assets/circleviclogo.png">
+   </p>
+  </div>
+
+     <div class="socialcontainer">
+        <p> 
+          <a href="http://www.twitch.tv/gurlsrbadatvidyagaems">
+           <img class="button" id="1" src="/assets/twitch.png">
+          </a>
+
+          <a href="https://www.twitter.com/viclovesd">
+           <img class="button" id="2" src="/assets/twitter.png">
+          </a>
+
+          <a href="https://www.facebook.com/biggestteets">
+           <img class="button" id="3" src="/assets/facebook.png">
+          </a>
+
+          <a href="http://www.instagram.com/viclovesd">
+           <img class="button" id="4" src="/assets/instagram.png">
+          </a>
+
+          <a href="http://www.youtube.com/c/viclovesd">
+           <img class="button" id="5" src="/assets/youtube.png">
+          </a>
+        </p> 
+     </div>
+</header>
+
+     <div class="container">
+        <div class="twitchstream">
+          <p style="text-align:center;">
+           <iframe
+            src="http://player.twitch.tv/?channel=gurlsrbadatvidyagaems"
+            height="540"
+            width="960"
+            frameborder="0"
+            scrolling="no"
+            allowfullscreen>
+           </iframe>
+
+           <iframe 
+            frameborder="0"
+            scrolling="no"
+            id="chat_embed"
+            src="http://www.twitch.tv/gurlsrbadatvidyagaems/chat"
+            height="540"
+            width="300">
+           </iframe>
+          </p>
+        </div>
+     </div>
 
 <script src="//code.jquery.com/jquery.min.js"></script>
 <script src="https://ttv-api.s3.amazonaws.com/twitch.min.js"></script>
 <script src="/twitch-js-sdk/twitch.min.js"></script>
 <script src="/twitch-js-sdk/twitch.js"></script>
-
-<header>
-  <div class="twitchlogin">
-   <p style="text-align:right;">
-    <img src="http://ttv-api.s3.amazonaws.com/assets/connect_dark.png" class="twitch-connect" href="#" />
-   </p>
-  </div>
-
-  <div class="logohead" style="background-image:url(/assets/banner2.png); height:455px;">
-   <p style="text-align:center;">
-    <img src="/assets/circleviclogo.png">
-   </p>
-  </div>
-
-     <div class="socialcontainer" style="background-color:black; height:80px;">
-      <table align="center" cellpadding="15">
-       <tr>
-        <td>
-         <div class="twitchbutton">
-          <a href="http://www.twitch.tv/gurlsrbadatvidyagaems">
-           <img src="/assets/twitch.png" style="width:250px;height:50px;">
-          </a>
-         </div>
-        </td>
-
-        <td>
-         <div class="twitterbutton">
-          <a href="https://twitter.com/viclovesd">
-           <img src="/assets/twitter.png" style="float:center;display:inline;width:250px;height:50px;">
-          </a>
-         </div>
-        </td>
-
-        <td>
-         <div class="facebookbutton">
-          <a href="https://www.facebook.com/biggestteets">
-           <img src="/assets/facebook.png" style="float:center;display:inline;width:250px;height:50px;">
-          </a>
-         </div>
-        </td>
-
-        <td>
-         <div class="instagrambutton">
-          <a href="http://instagram.com/viclovesd">
-           <img src="/assets/instagram.png" style="float:center;display:inline;width:250px;height:50px;">
-          </a>
-         </div>
-        </td>
-
-        <td>
-         <div class="youtubebutton">
-          <a href="youtube.com/c/viclovesd">
-           <img src="/assets/youtube.png" style="float:center;display:inline;width:250px;height:50px;">
-          </a>
-         </div>
-        </td>
-       </table>
-      </tr>
-     </div>
-</header>
-
-  <div class="container" style="background-color:black;">
-
-                 <div class="twitchstream">
-                  <p style="text-align:center;">
-                   <iframe
-                     src="http://player.twitch.tv/?channel=gurlsrbadatvidyagaems"
-                     height="540"
-                     width="960"
-                     frameborder="0"
-                     scrolling="no"
-                     allowfullscreen>
-                   </iframe>
-
-                   <iframe frameborder="0"
-                     scrolling="no"
-                     id="chat_embed"
-                     src="http://www.twitch.tv/gurlsrbadatvidyagaems/chat"
-                     height="540"
-                     width="300">
-                   </iframe>
-                  </p>
-                 </div>
-
- <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
- <script src="app.js"></script>
+ 
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="app.js"></script>
 
 <script>
 Twitch.init({
@@ -105,8 +84,6 @@ Twitch.init({
   console.log('the library is now loaded')
 });
 </script>
-
-<p> hi </p>
 
 </body>
 </html>

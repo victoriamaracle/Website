@@ -1,0 +1,41 @@
+img.logo {
+	padding-left: 160px;
+}
+
+img.button {
+	padding-right: 15px;
+	padding-left: 15px;
+	float: center;
+	display: inline;
+	width: 250px;
+	height: 50px;
+}
+
+a { 
+	text-decoration: none 
+}
+
+body {
+	background-color: black;
+}
+
+div.twitchlogin {
+	padding-right: 2px;
+	float: right;
+}
+
+div.logohead {
+	background-image: url(/assets/banner2.png); 
+	background-color: black;
+	background-repeat: repeat-x;
+	height:455px;
+	padding-bottom: 15px;
+	text-align: center;
+}
+
+div.socialcontainer {
+	background-color:black; 
+	height:80px;
+	border: solid white;
+	text-align: center;
+}
