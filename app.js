@@ -1,5 +1,5 @@
 $(document).ready(function() {
-  $('.socialcontainer img').hover(function() {
+  $('.twitchbutton img').hover(function() {
     $(this).attr('src', '/assets/twitch2.png');
   }, function() {
     $(this).attr('src', '/assets/twitch.png');
