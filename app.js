@@ -40,3 +40,4 @@ $('.twitch-connect').click(function() {
   // Already logged in, hide button
   $('.twitch-connect').hide()
    }
+   
