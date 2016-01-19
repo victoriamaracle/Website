@@ -1,33 +1,47 @@
 $(document).ready(function() {
-  $('.socialcontainer #1').hover(function() {
+  $('#twitchbutton').hover(function() {
     $(this).attr('src', '/assets/twitch2.png');
   }, function() {
     $(this).attr('src', '/assets/twitch.png');
   });
 
-   $('.socialcontainer #2').hover(function() {
+   $('#twitterbutton').hover(function() {
     $(this).attr('src', '/assets/twitter2.png');
   }, function() {
     $(this).attr('src', '/assets/twitter.png');
   });
 
-   $('.socialcontainer #3').hover(function() {
+   $('#facebookbutton').hover(function() {
     $(this).attr('src', '/assets/facebook2.png');
   }, function() {
     $(this).attr('src', '/assets/facebook.png');
   });
 
-   $('.socialcontainer #4').hover(function() {
+   $('#instagrambutton').hover(function() {
     $(this).attr('src', '/assets/instagram2.png');
   }, function() {
     $(this).attr('src', '/assets/instagram.png');
   });
 
-   $('.socialcontainer #5').hover(function() {
+   $('#youtubebutton').hover(function() {
     $(this).attr('src', '/assets/youtube2.png');
   }, function() {
     $(this).attr('src', '/assets/youtube.png');
   });
+});
+
+Twitch.init({clientId: '1lds253cl6eyaxwho81es7k1k1vunel'}, function(error, status) {
+  if (error) {
+    // error encountered while loading
+    console.log(error);
+  }
+  // the sdk is now loaded
+  if (status.authenticated) {
+    // user is currently logged in
+    $('.twitch-logout').show();
+  } else {
+    $('.twitch-connect').show();
+  }
 });
 
 $('.twitch-connect').click(function() {
@@ -36,8 +50,16 @@ $('.twitch-connect').click(function() {
   });
 })
 
-    if (status.authenticated) {
-  // Already logged in, hide button
-  $('.twitch-connect').hide()
-   }
-   
+$('.twitch-logout').click(function() {
+  Twitch.logout(function(error) {
+    // the user is now logged out
+  Twitch.getStatus({force: true}, function(err, status) {
+  if (status.authenticated) {
+    console.log('authenticated!')
+  };
+ });
+ });
+});
+
+
+

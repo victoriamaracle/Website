@@ -8,41 +8,43 @@
 <body>
 
 <header>
+ <div class="header">
   <div class="twitchlogin">
-   <p>
-    <img src="http://ttv-api.s3.amazonaws.com/assets/connect_dark.png" class="twitch-connect" href="#" />
-   </p>
+    <img src="http://ttv-api.s3.amazonaws.com/assets/connect_dark.png" class="twitch-connect"
+    href='#'/>
+    <img src="/assets/logout.png" class="twitch-logout" href='#'/>
   </div>
 
   <div class="logohead">
    <p>
-    <img class="logo" src="/assets/circleviclogo.png">
+    <img class="logo" src="/assets/circleviclogo.png"/>
    </p>
   </div>
 
      <div class="socialcontainer">
-        <p> 
+        <p>
           <a href="http://www.twitch.tv/gurlsrbadatvidyagaems">
-           <img class="button" id="1" src="/assets/twitch.png">
+           <img class="button" id="twitchbutton" src="/assets/twitch.png"/>
           </a>
 
           <a href="https://www.twitter.com/viclovesd">
-           <img class="button" id="2" src="/assets/twitter.png">
+           <img class="button" id="twitterbutton" src="/assets/twitter.png"/>
           </a>
 
           <a href="https://www.facebook.com/biggestteets">
-           <img class="button" id="3" src="/assets/facebook.png">
+           <img class="button" id="facebookbutton" src="/assets/facebook.png"/>
           </a>
 
           <a href="http://www.instagram.com/viclovesd">
-           <img class="button" id="4" src="/assets/instagram.png">
+           <img class="button" id="instagrambutton" src="/assets/instagram.png"/>
           </a>
 
           <a href="http://www.youtube.com/c/viclovesd">
-           <img class="button" id="5" src="/assets/youtube.png">
+           <img class="button" id="youtubebutton" src="/assets/youtube.png"/>
           </a>
-        </p> 
+        </p>
      </div>
+ </div>
 </header>
 
      <div class="container">
@@ -57,7 +59,7 @@
             allowfullscreen>
            </iframe>
 
-           <iframe 
+           <iframe
             frameborder="0"
             scrolling="no"
             id="chat_embed"
@@ -70,20 +72,12 @@
      </div>
 
 <script src="//code.jquery.com/jquery.min.js"></script>
-<script src="https://ttv-api.s3.amazonaws.com/twitch.min.js"></script>
-<script src="/twitch-js-sdk/twitch.min.js"></script>
-<script src="/twitch-js-sdk/twitch.js"></script>
- 
+<!-- <script src="https://ttv-api.s3.amazonaws.com/twitch.min.js"></script>
+ --><!-- <script src="/twitch-js-sdk-master/twitch.min.js"></script> -->
+<script src="/twitch-js-sdk-master/twitch.js"></script>
+
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 <script src="app.js"></script>
-
-<script>
-Twitch.init({
-  clientId: '1lds253cl6eyaxwho81es7k1k1vunel'
-}, function(err, status) {
-  console.log('the library is now loaded')
-});
-</script>
 
 </body>
 </html>
