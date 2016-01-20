@@ -8,20 +8,28 @@
 <body>
 
 <header>
- <div class="header">
-  <div class="twitchlogin">
-    <img src="http://ttv-api.s3.amazonaws.com/assets/connect_dark.png" class="twitch-connect"
-    href='#'/>
-    <img src="/assets/logout.png" class="twitch-logout" href='#'/>
-  </div>
+  <div class="header">
+      <div class="twitchlogin">
+       <img src="http://ttv-api.s3.amazonaws.com/assets/connect_dark.png" class="twitch-connect"
+          href='#'/>
+       <img src="/assets/logout.png" class="twitch-logout" href='#'/>
+      </div>
 
-  <div class="logohead">
-   <p>
-    <img class="logo" src="/assets/circleviclogo.png"/>
-   </p>
-  </div>
+      <div class="logohead">
+        <p>
+           <img class="logo" src="/assets/circleviclogo.png"/>
+          <div class="direct">
+           <img id='home' src='/assets/home.png'/>
+           <img id='sched' src='/assets/sched.png'/>
+           <img id='vod' src='/assets/vod.png'/>
+          </div>
+         <img id='tab' src='/assets/tab.png'/>
+        </p>
+      </div>
 
-     <div class="socialcontainer">
+      <div class="backgroundhead"></div>
+
+      <div class="socialcontainer">
         <p>
           <a href="http://www.twitch.tv/gurlsrbadatvidyagaems">
            <img class="button" id="twitchbutton" src="/assets/twitch.png"/>
@@ -43,38 +51,39 @@
            <img class="button" id="youtubebutton" src="/assets/youtube.png"/>
           </a>
         </p>
-     </div>
- </div>
+      </div>
+  </div>
 </header>
 
-     <div class="container">
-        <div class="twitchstream">
-          <p style="text-align:center;">
-           <iframe
+  <div class="content">
+      <div class="twitchstream">
+        <p style="text-align:center;">
+          <iframe
             src="http://player.twitch.tv/?channel=gurlsrbadatvidyagaems"
             height="540"
             width="960"
             frameborder="0"
             scrolling="no"
             allowfullscreen>
-           </iframe>
+          </iframe>
 
-           <iframe
+          <iframe
             frameborder="0"
             scrolling="no"
             id="chat_embed"
             src="http://www.twitch.tv/gurlsrbadatvidyagaems/chat"
             height="540"
             width="300">
-           </iframe>
-          </p>
-        </div>
-     </div>
+          </iframe>
+        </p>
+      </div>
+  </div>
 
 <script src="//code.jquery.com/jquery.min.js"></script>
 <!-- <script src="https://ttv-api.s3.amazonaws.com/twitch.min.js"></script>
  --><!-- <script src="/twitch-js-sdk-master/twitch.min.js"></script> -->
 <script src="/twitch-js-sdk-master/twitch.js"></script>
+<script id="dsq-count-scr" src="//viclovesd.disqus.com/count.js" async></script>
 
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 <script src="app.js"></script>

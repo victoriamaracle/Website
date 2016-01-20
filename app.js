@@ -1,5 +1,24 @@
 $(document).ready(function() {
-  $('#twitchbutton').hover(function() {
+
+   $('#tab').click(function() {
+    if ( $(this).hasClass("isRight") ) {
+     $('#vod').animate({top:'0'}, 1000, function() {
+       $('#tab').animate({left:'1140px'});
+       $('.direct').animate({left:'787px'});
+      });
+     $('#sched').animate({top:'0'}, 1000);
+    } else {
+     $('#tab').animate({left:'1500px'}, function() {
+       $('#sched').animate({top:'44px'}, 1000);
+       $('#vod').animate({top:'88px'}, 1000);
+      });
+     $('.direct').animate({left:'1147px'});
+    }
+    $(this).toggleClass('isRight');
+    return false;
+   });
+
+   $('#twitchbutton').hover(function() {
     $(this).attr('src', '/assets/twitch2.png');
   }, function() {
     $(this).attr('src', '/assets/twitch.png');
@@ -28,9 +47,8 @@ $(document).ready(function() {
   }, function() {
     $(this).attr('src', '/assets/youtube.png');
   });
-});
 
-Twitch.init({clientId: '1lds253cl6eyaxwho81es7k1k1vunel'}, function(error, status) {
+  Twitch.init({clientId: '1lds253cl6eyaxwho81es7k1k1vunel'}, function(error, status) {
   if (error) {
     // error encountered while loading
     console.log(error);
@@ -59,6 +77,8 @@ $('.twitch-logout').click(function() {
   };
  });
  });
+});
+
 });
 
 
