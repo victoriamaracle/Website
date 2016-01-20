@@ -8,7 +8,7 @@ $(document).ready(function() {
       });
      $('#sched').animate({top:'0'}, 1000);
     } else {
-     $('#tab').animate({left:'1505px'}, function() {
+     $('#tab').animate({left:'1500px'}, function() {
        $('#sched').animate({top:'44px'}, 1000);
        $('#vod').animate({top:'88px'}, 1000);
       });
@@ -17,30 +17,6 @@ $(document).ready(function() {
     $(this).toggleClass('isRight');
     return false;
    });
-
-   $('#home').mouseenter(function() {
-    $('#home').fadeTo( 'fast', 1);
-   });
-
-   $('#home').mouseleave(function() {
-    $('#home').fadeTo( 'fast', 0.8);
-   });
-
-   $('#sched').mouseenter(function() {
-    $('#sched').fadeTo( 'fast', 1);
-   });
-
-   $('#sched').mouseleave(function() {
-    $('#sched').fadeTo( 'fast', 0.8);
-   });
-
-   $('#vod').mouseenter(function() {
-    $('#vod').fadeTo( 'fast', 1);
-   });
-
-   $('#vod').mouseleave(function() {
-    $('#vod').fadeTo( 'fast', 0.8);
-   });      
 
    $('#twitchbutton').hover(function() {
     $(this).attr('src', '/assets/twitch2.png');
