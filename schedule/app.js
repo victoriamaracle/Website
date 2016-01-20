@@ -4,19 +4,43 @@ $(document).ready(function() {
     if ( $(this).hasClass("isRight") ) {
      $('#vod').animate({top:'0'}, 1000, function() {
        $('#tab').animate({left:'1140px'});
-       $('.direct').animate({left:'787px'});
+       $('#direct').animate({left:'787px'});
       });
      $('#sched').animate({top:'0'}, 1000);
     } else {
-     $('#tab').animate({left:'1500px'}, function() {
+     $('#tab').animate({left:'1505px'}, function() {
        $('#sched').animate({top:'44px'}, 1000);
        $('#vod').animate({top:'88px'}, 1000);
       });
-     $('.direct').animate({left:'1147px'});
+     $('#direct').animate({left:'1147px'});
     }
     $(this).toggleClass('isRight');
     return false;
    });
+
+   $('#home').mouseenter(function() {
+    $('#home').fadeTo( 'fast', 1);
+   });
+
+   $('#home').mouseleave(function() {
+    $('#home').fadeTo( 'fast', 0.8);
+   });
+
+   $('#sched').mouseenter(function() {
+    $('#sched').fadeTo( 'fast', 1);
+   });
+
+   $('#sched').mouseleave(function() {
+    $('#sched').fadeTo( 'fast', 0.8);
+   });
+
+   $('#vod').mouseenter(function() {
+    $('#vod').fadeTo( 'fast', 1);
+   });
+
+   $('#vod').mouseleave(function() {
+    $('#vod').fadeTo( 'fast', 0.8);
+   });      
 
    $('#twitchbutton').hover(function() {
     $(this).attr('src', '/assets/twitch2.png');

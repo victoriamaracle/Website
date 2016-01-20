@@ -1,7 +1,7 @@
 <!doctype html>
 <html>
 <head>
-<title>Viclovesd - Home</title>
+<title>Viclovesd - Schedule</title>
 <link rel="shortcut icon" href="/assets/title.ico">
 <link rel="stylesheet" href="style.css">
 </head>
@@ -17,11 +17,19 @@
 
       <div class="logohead">
         <p>
-           <img class="logo" src="/assets/circleviclogo.png"/>
-          <div class="direct">
-            <img class='home' src='/assets/home.png'/>
-            <img class='sched' src='/assets/sched.png'/>
-            <img class='vod' src='/assets/vod.png'/>
+         <img class="logo" src="/assets/circleviclogo.png"/>
+          <div id='direct'>
+            <a href="/">
+             <img id='home' src='/assets/home.png'/>
+            </a>
+            
+            <a href="/schedule">  
+             <img id='sched' src='/assets/sched.png'/>
+            </a> 
+            
+            <a href='/videos'>
+             <img id='vod' src='/assets/vod.png'/>
+            </a> 
           </div>
          <img id='tab' src='/assets/tab.png'/>
         </p>
@@ -54,6 +62,10 @@
       </div>
   </div>
 </header>
+
+<div class= "calendar">
+<iframe src="https://calendar.google.com/calendar/embed?showTitle=0&amp;showPrint=0&amp;mode=WEEK&amp;height=700&amp;wkst=1&amp;bgcolor=%2333ccff&amp;src=jeskto6korms1092o35lucoo30%40group.calendar.google.com&amp;color=%69AAB1&amp;ctz=America%2FToronto" style="border-width:0" width="1260" height="740" frameborder="0" scrolling="no"></iframe>
+</div>
 
 <script src="//code.jquery.com/jquery.min.js"></script>
 <!-- <script src="https://ttv-api.s3.amazonaws.com/twitch.min.js"></script>

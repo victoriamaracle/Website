@@ -19,7 +19,7 @@ a {
 }
 
 body {
-  background-color: white;
+  background-color: black;
 }
 
 .twitchlogin {
@@ -94,7 +94,7 @@ body {
 }
 
 .backgroundhead {
-  background-image: url(/assets/banner.png);
+  background-image: url(/assets/banner2.png);
   background-repeat: no-repeat;
   height:455px;
   padding-bottom: 5px;
@@ -106,8 +106,3 @@ body {
   z-index: -3;
 }
 
-.calendar {
-  position: absolute;
-  left: 320px;
-  padding-top: 15px;
-}
