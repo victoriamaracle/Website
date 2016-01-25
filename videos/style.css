@@ -1,7 +1,9 @@
 .logo {
   position: absolute;
-  left: 740px;
-  top: 5px;
+  width: 412px;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
   z-index: 4;
 }
 
@@ -19,25 +21,26 @@ a {
 }
 
 body {
-  background-color: black;
+  background-color: white;
+  margin: auto;
+  padding: 0;
 }
 
 .twitchlogin {
-  margin-right: 4px;
+  margin-right: 25px;
   margin-top: 10px;
   float: right;
 }
 
-.logohead {
-  height:455px;
-  padding-bottom: 15px;
-  text-align: center;
-}
-
 .socialcontainer {
-  background-color:black;
-  height:80px;
-  border: solid white;
+  background-color: #7dced5;
+  position: relative;
+  margin-top: 10px;
+  margin-right: 10px;
+  margin-left: 10px;
+  margin-bottom: 10px;
+  height: 80px;
+  border: solid black;
   text-align: center;
 }
 
@@ -53,23 +56,26 @@ body {
 
 #tab {
   position: absolute;
-  left: 1145px;
-  top: 230px;
-  right: 0px;
+  width: 38px;
+  height: 47px;
+  margin top: 10px;
+  left: 0;
+  right: 0;
   cursor: pointer;
+  z-index: 10;
 }
 
 #direct {
-  position: absolute;
-  left: 787px;
-  top: 230px;
-  right: 0px;
+  position: relative;
+  width: 360px;
+  height: 47px;
 }
 
 #home {
   position: absolute;
+  margin: 0 auto;
+  bottom: 0;
   left: 0;
-  top: 0;
   right: 0;
   z-index: 3;
   opacity: 0.8;
@@ -77,8 +83,9 @@ body {
 
 #sched {
   position: absolute;
+  margin: 0 auto;
+  bottom: 0;
   left: 0;
-  top: 0;
   right: 0;
   z-index: 2;
   opacity: 0.8;
@@ -86,23 +93,54 @@ body {
 
 #vod {
   position: absolute;
+  margin: 0 auto;
+  bottom: 0;
   left: 0;
-  top: 0;
   right: 0;
   z-index: 1;
   opacity: 0.8;
 }
 
 .backgroundhead {
-  background-image: url(/assets/banner2.png);
+  background-image: url(/assets/banner.png);
   background-repeat: no-repeat;
-  height:455px;
-  padding-bottom: 5px;
-  text-align: center;
-  position: absolute;
-  top: 10px;
-  left: 10px;
-  right: 10px;
+  background-position: center;
+  background-color: #7dced5;
+  height: 455px;
+  position: relative;
+  margin: auto;
+  margin: 10px;
+  right: 0;
+  left: 0;
   z-index: -3;
+  border: solid black;
 }
 
+.content {
+  position: relative;
+  margin-left: 270px;
+  margin-right: 270px;
+  margin-top: 0px;
+  margin-bottom: 10px;
+  background-color: #7dced5;
+  border: solid black;
+  z-index: -1
+}
+
+.calendar {
+  margin-left: 45px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.playlist {
+  position: relative;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: 42px;
+  margin-right: 42px;
+}
+
+.form {
+  padding-left: 547px;
+}

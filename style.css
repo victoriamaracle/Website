@@ -19,26 +19,29 @@ a {
 }
 
 body {
-  background-color: black;
+  background-color: white;
 }
 
 .twitchlogin {
-  margin-right: 4px;
+  margin-right: 25px;
   margin-top: 10px;
   float: right;
 }
 
 .logohead {
   height:455px;
-  padding-bottom: 15px;
+  padding-bottom: 7px;
   text-align: center;
 }
 
 .socialcontainer {
   background-color: #7dced5;
+  position: absolute;
   height:80px;
+  width: 1870px;
   border: solid black;
   text-align: center;
+  left: 14px;
 }
 
 .twitch-connect {
@@ -96,16 +99,35 @@ body {
 .backgroundhead {
   background-image: url(/assets/banner.png);
   background-repeat: no-repeat;
-  height:455px;
+  height: 455px;
+  width: 1870px;
+  border: solid black;
   padding-bottom: 5px;
   text-align: center;
   position: absolute;
-  top: 10px;
-  left: 10px;
+  top: 6px;
+  left: 14px;
   right: 10px;
   z-index: -3;
 }
 
+.content {
+  position: absolute;
+  left: 320px;
+  top: 570px;
+  width: 1350px;
+  background-color: #7dced5;
+  border: solid black;
+  margin-bottom: 7px;
+  z-index: -1
+}
+
 .calendar {
-  text-align: center;
+  margin-left: 45px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.form {
+  padding-left: 547px;
 }
