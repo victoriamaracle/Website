@@ -1,108 +1,54 @@
 $(document).ready(function() {
 
-   $('#tab').click(function() {
-    if ( $(this).hasClass("isRight") ) {
-     $('#vod').animate({top:'0'}, 1000, function() {
-       $('#tab').animate({left:'1140px'});
-       $('#direct').animate({left:'787px'});
-      });
-     $('#sched').animate({top:'0'}, 1000);
-    } else {
-     $('#tab').animate({left:'1505px'}, function() {
-       $('#sched').animate({top:'44px'}, 1000);
-       $('#vod').animate({top:'88px'}, 1000);
-      });
-     $('#direct').animate({left:'1147px'});
-    }
-    $(this).toggleClass('isRight');
-    return false;
+   $('.home').mouseenter(function() {
+    $('#home').fadeTo( '300', 0);
+    $('#home2').fadeTo( '300', 1);
    });
 
-   $('#home').mouseenter(function() {
-    $('#home').fadeTo( 'fast', 1);
+   $('.home').mouseleave(function() {
+    $('#home2').fadeTo( '300', 0);
+    $('#home').fadeTo( '300', 1);
    });
 
-   $('#home').mouseleave(function() {
-    $('#home').fadeTo( 'fast', 0.8);
+   $('.vod').mouseenter(function() {
+    $('#vod').fadeTo( '300', 0);
+    $('#vod2').fadeTo( '300', 1);
    });
 
-   $('#sched').mouseenter(function() {
-    $('#sched').fadeTo( 'fast', 1);
+   $('.vod').mouseleave(function() {
+    $('#vod2').fadeTo( '300', 0);
+    $('#vod').fadeTo( '300', 1);
    });
 
-   $('#sched').mouseleave(function() {
-    $('#sched').fadeTo( 'fast', 0.8);
+   $('.sched').mouseenter(function() {
+    $('#sched').fadeTo( '300', 0);
+    $('#sched2').fadeTo( '300', 1);
    });
 
-   $('#vod').mouseenter(function() {
-    $('#vod').fadeTo( 'fast', 1);
+   $('.sched').mouseleave(function() {
+    $('#sched2').fadeTo( '300', 0);
+    $('#sched').fadeTo( '300', 1);
    });
 
-   $('#vod').mouseleave(function() {
-    $('#vod').fadeTo( 'fast', 0.8);
-   });      
+   $('.faq').mouseenter(function() {
+    $('#faq').fadeTo( '300', 0);
+    $('#faq2').fadeTo( '300', 1);
+   });
 
-   $('#twitchbutton').hover(function() {
-    $(this).attr('src', '/assets/twitch2.png');
-  }, function() {
-    $(this).attr('src', '/assets/twitch.png');
-  });
+   $('.faq').mouseleave(function() {
+    $('#faq2').fadeTo( '300', 0);
+    $('#faq').fadeTo( '300', 1);
+   });
 
-   $('#twitterbutton').hover(function() {
-    $(this).attr('src', '/assets/twitter2.png');
-  }, function() {
-    $(this).attr('src', '/assets/twitter.png');
-  });
+   $('.comp').mouseenter(function() {
+    $('#comp').fadeTo( '300', 0);
+    $('#comp2').fadeTo( '300', 1);
+   });
 
-   $('#facebookbutton').hover(function() {
-    $(this).attr('src', '/assets/facebook2.png');
-  }, function() {
-    $(this).attr('src', '/assets/facebook.png');
-  });
-
-   $('#instagrambutton').hover(function() {
-    $(this).attr('src', '/assets/instagram2.png');
-  }, function() {
-    $(this).attr('src', '/assets/instagram.png');
-  });
-
-   $('#youtubebutton').hover(function() {
-    $(this).attr('src', '/assets/youtube2.png');
-  }, function() {
-    $(this).attr('src', '/assets/youtube.png');
-  });
-
-  Twitch.init({clientId: '1lds253cl6eyaxwho81es7k1k1vunel'}, function(error, status) {
-  if (error) {
-    // error encountered while loading
-    console.log(error);
-  }
-  // the sdk is now loaded
-  if (status.authenticated) {
-    // user is currently logged in
-    $('.twitch-logout').show();
-  } else {
-    $('.twitch-connect').show();
-  }
-});
-
-$('.twitch-connect').click(function() {
-  Twitch.login({
-    scope: ['user_read', 'channel_read']
-  });
-})
-
-$('.twitch-logout').click(function() {
-  Twitch.logout(function(error) {
-    // the user is now logged out
-  Twitch.getStatus({force: true}, function(err, status) {
-  if (status.authenticated) {
-    console.log('authenticated!')
-  };
- });
- });
-});
-
+   $('.comp').mouseleave(function() {
+    $('#comp2').fadeTo( '300', 0);
+    $('#comp').fadeTo( '300', 1);
+   });
 });
 
 

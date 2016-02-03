@@ -58,23 +58,17 @@ body {
   position: absolute;
   width: 38px;
   height: 47px;
-  margin: 0 auto;
+  margin top: 10px;
   left: 0;
   right: 0;
-  top: 230px;
-  padding-left: 430px;
   cursor: pointer;
+  z-index: 10;
 }
 
-.direct {
-  position: absolute;
+#direct {
+  position: relative;
   width: 360px;
   height: 47px;
-  margin: 0 auto;
-  left: 0;
-  right: 0;
-  top: 230px;
-  padding-left: 856px;
 }
 
 #home {
@@ -149,4 +143,11 @@ body {
 
 .form {
   padding-left: 547px;
+}
+
+.specs {
+  text-align: center;
+  font: bold 50px Arial;
+  color: white;
+  text-shadow: 3px 3px black;
 }
