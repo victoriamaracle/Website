@@ -4,17 +4,22 @@
   margin: 0 auto;
   left: 0;
   right: 0;
+  top: -10px;
 }
 
+
 .home {
-  position: absolute;
+  position: fixed;
   margin: 0 auto;
   right: 1520px;
   left: 20px;
-  top: 20px;
+  top: -55px;
   float: left;
   width: 250px;
   height: 50px;
+  border-bottom: 3px solid #dedede;
+  border-left: 3px solid #dedede;
+  z-index: 1;
 }
 
 #home2{
@@ -22,14 +27,16 @@
 }
 
 .vod {
-  position: absolute;
+  position: fixed;
   margin: 0 auto;
-  right: 1270px;
+  right: 1267px;
   left: 270px;
-  top: 20px;
+  top: -55px;
   float: left;
   width: 250px;
   height: 50px;
+  border-bottom: 3px solid #d3d3d3;
+  z-index: 1;
 }
 
 #vod2{
@@ -37,14 +44,16 @@
 }
 
 .sched {
-  position: absolute;
+  position: fixed;
   margin: 0 auto;
-  right: 1020px;
+  right: 1018px;
   left: 520px;
-  top: 20px;
+  top: -55px;
   float: left;
   width: 250px;
   height: 50px;
+  border-bottom: 3px solid #d3d3d3;
+  z-index: 1;
 }
 
 #sched2{
@@ -52,14 +61,16 @@
 }
 
 .faq {
-  position: absolute;
+  position: fixed;
   margin: 0 auto;
   right: 770px;
   left: 770px;
-  top: 20px;
+  top: -55px;
   float: left;
   width: 250px;
   height: 50px;
+  border-bottom: 3px solid #d3d3d3;
+  z-index: 1;
 }
 
 #faq2{
@@ -67,14 +78,16 @@
 }
 
 .comp {
-  position: absolute;
+  position: fixed;
   margin: 0 auto;
-  right: 520px;
+  right: 521px;
   left: 1020px;
-  top: 20px;
+  top: -55px;
   float: left;
   width: 250px;
   height: 50px;
+  border-bottom: 3px solid #d3d3d3;
+  z-index: 1;
 }
 
 #comp2{
@@ -82,14 +95,16 @@
 }
 
 .discord {
-  position: absolute;
+  position: fixed;
   margin: 0 auto;
-  right: 270px;
+  right: 271px;
   left: 1270px;
-  top: 20px;
+  top: -55px;
   float: left;
   width: 250px;
   height: 50px;
+  border-bottom: 3px solid #d3d3d3;
+  z-index: 1;
 }
 
 #discord2{
@@ -97,14 +112,18 @@
 }
 
 .social {
-  position: absolute;
+  position: fixed;
   margin: 0 auto;
   right: 0;
-  left: 1520px;
-  top: 20px;
+  left: 1500px;
+  top: -55px;
   float: left;
   width: 250px;
   height: 50px;
+  cursor: pointer;
+  border-bottom: 3px solid #d3d3d3;
+  border-right: 3px solid #d3d3d3;
+  z-index: 1;
 }
 
 #social2{
@@ -112,35 +131,24 @@
 }
 
 .pull {
-  position: absolute;
+  position: fixed;
   width: 55px;
   height: 40px;
   margin: 0 auto;
-  left: 30px;
-  top: 20px;
+  left: 10px;
+  right: 1850px;
+  top: 3px;
   cursor: pointer;
-  visibility: hidden;
-}
-
-.backgroundhead {
-  background-repeat: no-repeat;
-  background-position: center;
-  background-color: white;
-  height: 455px;
-  position: relative;
-  margin: auto;
-  right: 0;
-  left: 0;
-  top: 0;
-  z-index: -2;
 }
 
 .content {
-  position: relative;
+  position: absolute;
   margin-left: 270px;
   margin-right: 270px;
-  margin-top: 0px;
   margin-bottom: 10px;
+  top: 440px;
+  right: 0;
+  left: 0;
   z-index: -1;
   font-family: Helvetica;
   font-size: 15px;
