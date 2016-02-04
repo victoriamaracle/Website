@@ -72,13 +72,27 @@ $(document).ready(function() {
 
    $('.pull').click(function() {
     if ( $(this).hasClass("isDown") ) {
-     $('.home, .vod, .sched, .faq, .comp, .discord, .social').animate({top:'-55px'});
+     $('.home, .vod, .sched, .faq, .comp, .discord, .social, .twitch, .twitter, .instagram, .facebook, .youtube').animate({top:'-55px'});
      $('.down').animate({top:'-=50px'});
     } else {
-     $('.home, .vod, .sched, .faq, .comp, .discord, .social').animate({top:'0'});
+     $('.home, .vod, .sched, .faq, .comp, .discord, .social, .twitch, .twitter, .instagram, .facebook, .youtube').animate({top:'0'});
      $('.down').animate({top:'+=50px'});
     }
     $(this).toggleClass('isDown');
+    return false;
+   });
+
+   $('.social').click(function() {
+    if ( $(this).hasClass("isOut") ) {
+     $('.twitch, .twitter, .instagram, .facebook, .youtube').animate({top:'0'});
+    } else {
+     $('.twitch').animate({top:'+=50px'});
+     $('.twitter').animate({top:'+=100px'});
+     $('.instagram').animate({top:'+=150px'});
+     $('.facebook').animate({top:'+=200px'});
+     $('.youtube').animate({top:'+=250px'});
+    }
+    $(this).toggleClass('isOut');
     return false;
    });
 });
